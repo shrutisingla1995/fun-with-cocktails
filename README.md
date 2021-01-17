@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
 
 ## Screen 
-![alt text](https://github.com/shrutisingla1995/fun-with-cocktails/tree/main/src/assets/cocktails.png?raw=true)
+![alt text](https://github.com/shrutisingla1995/fun-with-cocktails/blob/main/src/assets/cocktails.png)
 
 ## Development server
 
