@@ -1,0 +1,71 @@
+@import "~@ng-select/ng-select/themes/material.theme.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+.filter-container {
+  position: fixed;
+  padding: 1.5rem 0;
+  width: 220px;
+  background-color: #fff;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  border-right: 1px solid #d0d0d0; // view height without header height
+  overflow: scroll;
+  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+  left: 0;
+  transition: all ease 0.3s;
+
+  &::-webkit-scrollbar {
+    display: none; /* Hide scrollbar Chrome, Safari */
+  }
+
+  .filter-text{
+    margin:4px 15px;
+    color:grey;
+    font-size: 12px;
+  }
+  /deep/ .ng-dropdown-panel .scroll-host{
+    background: #d8d8d8;
+    margin: 0 15px;
+    padding: 10px;
+  }
+  /deep/ .ng-select .ng-select-container{
+    padding: 3px;
+    background: white;
+    border: 2px solid #800090;
+    border-radius: 5px;
+    margin: 5px 15px;
+    width: auto;
+  }
+  /deep/ .ng-select .ng-select-container .ng-value-container .ng-input>input{
+    padding: 8px 10px;
+  }
+  h4{
+    margin:0 15px;
+  }
+  /deep/ .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value{
+    background: #d8d8d8;
+    padding: 3px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #800090;
+    margin:3px;
+  }
+  .filter-button {
+    width: 15%;
+    height: 40px;
+    background: #800090;
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 10px;
+    left: 15px;
+  }
+}
+

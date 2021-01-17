@@ -1,0 +1,19 @@
+<div class="filter-container">
+    <form [formGroup]="filterForm">
+        <div class="filter-text">Search and select to filter:</div>
+        <h4>Categories:</h4>
+        <div *ngIf="categories.length">
+            <ng-select  [multiple]= true [closeOnSelect]=false formControlName="selectedCategory"> 
+                <ng-option *ngFor="let cat of categories" [value]="cat?.strCategory">{{cat?.strCategory}}</ng-option>
+            </ng-select>
+        </div>
+        <h4>Ingredients:</h4>
+        <div *ngIf="ingredients.length">
+            <ng-select  [multiple]= true [closeOnSelect]=false formControlName="selectedIngredients">
+                <ng-option *ngFor="let ing of ingredients" [value]="ing.strIngredient1">{{ing?.strIngredient1}}</ng-option>
+            </ng-select>
+        </div>
+    </form>
+    <button class="filter-button" (click)="filter()">APPLY</button>
+</div>
+ 

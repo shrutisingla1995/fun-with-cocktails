@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap");
+
+$min-header-width: 320px;
+
+.header-container {
+  position: fixed;
+  top: 0px;
+  height: 70px;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #d8d8d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  min-width: $min-header-width;
+
+  .header-title {
+    font-family: "Seaweed Script", cursive;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0.4em;
+    color: #800090;
+    vertical-align: middle;
+  }
+
+  i{
+    font-size: 30px;
+    color: #800090;
+  }
+}
+
+@media (max-width: 550px) {
+  .header-container {
+    justify-content: flex-end;
+    .header-title {
+      font-size: 1.2rem;
+    }
+  }
+}

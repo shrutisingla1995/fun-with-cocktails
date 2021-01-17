@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:host {
+  flex-grow: 1;
+}
+
+.content-container {
+  padding: 50px;
+  margin-left: 206px;
+    .content-category-item {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(150px, auto));
+      gap: 0.5em;
+
+      .item-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background: #d8d8d8;
+        border-radius: 5px;
+        color: #800090;
+        padding: 15px;
+        img {
+          height: 150px;
+          width: 150px;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        }
+        .card-title h3 {
+          margin:10px 0 0;
+          font-weight: normal;
+          font-style: normal;
+          font-size: 14px;
+          line-height: 21px;
+          text-align: center;
+        }
+        &:hover{
+          box-shadow:  0px 3px 10px rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
+
+}
